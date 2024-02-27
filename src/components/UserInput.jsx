@@ -13,11 +13,16 @@ function UserInput() {
         setWish(""); 
     }
 
+    function deleteAll() {
+        setWishes([]); 
+        // setWishes(["ohh sorry now you have to need first add any wish😮"])
+    }
+
     return (
         <form>
             <div id='firstwish'>
                 <label htmlFor="wish"> Wish :- </label>
-                <input type="text" id='wish' value={wish} onChange={handleInputChange} />
+                <input type="text" id='wish' value={wish} onChange={handleInputChange} placeholder='please write your wish here' />
                 <button type="button" onClick={handleAdd}>ADD</button>
                 
                 <ul>
@@ -25,9 +30,12 @@ function UserInput() {
                         <li key={index}>{item}</li>
                     ))}
                 </ul>
+                <button type="button" onClick={deleteAll}>Clear All</button>
+               
             </div>
         </form>
     );
 }
 
 export default UserInput;
+

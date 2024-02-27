@@ -1,9 +1,12 @@
+
+
 #Box{
     height: 52vh;
         width: 52vw;
     box-shadow: 5px 5px 10px salmon,-5px -5px 10px salmon,7px 7px 10px salmon,
         -5px -5px 10px rgb(235, 10, 40);
     border-radius: 30px;
+    background-color: aqua;
 }
 #box{
     height: 53vh;
